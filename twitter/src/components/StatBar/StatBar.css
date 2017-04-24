@@ -1,0 +1,101 @@
+.StatBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25);
+  height: 60px;
+  min-width: 900px;
+}
+
+.StatBar .stat-bar-left,
+.StatBar .stat-bar-right,
+.StatBar .stat-bar-middle {
+
+}
+
+.StatBar .stat-bar-left {
+  width: 270px;
+}
+
+.StatBar .stat-bar-middle {
+  width: 600px;
+  margin-right: 10px;
+}
+
+.StatBar .stat-bar-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 290px;
+}
+
+.StatBar .Button {
+  height: 40px;
+  padding: 0 20px;
+  opacity: 1;
+}
+
+.StatBar .Button:hover {
+  background-color: #E5214A;
+  border: 1px solid #E5214A;
+}
+
+.StatBar .MoreMenu {
+  margin-left: 15px;
+  margin-top: 6px;
+  vertical-align: middle;
+  font-size: 2em;
+}
+
+.StatBar .MoreMenu:hover {
+  cursor: pointer;
+  color: #059FF5;
+}
+
+.StatBar .ProfileStats {
+  height: 60px;
+}
+
+.StatBar .ProfileStats ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.ProfileStats .StatItem {
+  display: inline-block;
+  text-align: center;
+  padding: 13px 15px 2px 15px;
+}
+
+.ProfileStats .StatItem:hover, .ProfileStats .StatItem.selected-item {
+  height: 41px;
+  border-bottom: 4px solid #059FF5;
+  transform: border 1s ease-in;
+  color: #059FF5;
+  cursor: pointer;
+}
+
+.ProfileStats .StatItem .stat-heading {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+}
+.ProfileStats .StatItem .stat-count {
+  display: block;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+@media all and (max-width: 1230px) {
+  .StatBar .stat-bar-right {
+    margin-right: 20px;
+    width: 0px;
+  }
+  .StatBar .stat-bar-middle {
+    width: 590px;
+  }
+}

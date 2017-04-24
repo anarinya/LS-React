@@ -1,0 +1,94 @@
+.Profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 900px;
+}
+
+.Profile .ProfileDetails {
+  width: 270px;
+}
+
+.Profile .ProfileDetails .profile-detail-area {
+  flex-shrink: 0;
+  margin-top: 40px;
+  font-size: 1.15em;
+  width: 270px;
+  color: #14171A;
+}
+
+.ProfileDetails .profile-user {
+  margin-bottom: 5px;
+  font-size: 1.7em;
+}
+
+.ProfileDetails .profile-bio {
+  line-height: 1.35em;
+}
+
+.ProfileDetails .profile-list {
+  padding-left: 0;
+}
+
+.ProfileDetails .profile-list li {
+  padding: 4px 0;
+}
+
+.ProfileDetails .profile-list li i {
+  font-size: 1.3em;
+  color: #647787;
+}
+
+.ProfileDetails .profile-list a {
+  color: inherit;
+  text-decoration: none;
+  color: #059FF5;
+}
+
+.ProfileDetails .profile-handle,
+.ProfileDetails .follows-you {
+  color: #647787;
+}
+
+.ProfileDetails .follows-you {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin-left: 15px;
+}
+
+.ProfileDetails .Button {
+  height: 40px;
+  padding: 0 20px;
+}
+
+.MiniAvatar img {
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 48px;
+  height: 48px;
+}
+
+.GiantAvatar {
+  position: relative;
+  top: -40px;
+}
+
+.GiantAvatar img {
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
+  border: 5px solid #fff;
+  z-index: 5;
+}
+
+.reorder-sidebar{
+  order: 3;
+}
+
+
+@media all and (max-width: 1230px) {
+  .Profile .SideBar {
+    display: none;
+  }
+}

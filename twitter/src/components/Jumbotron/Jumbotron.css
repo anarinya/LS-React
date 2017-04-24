@@ -1,0 +1,39 @@
+.Jumbotron {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  height: 320px;
+  width: 100%;
+  background-image: url('/img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  min-width: 900px;
+}
+
+.Jumbotron h1 {
+  font-size: 4.8em;
+  margin: 0;
+}
+
+.Jumbotron h2 {
+  margin-top: 10px;
+  font-size: 1.8em;
+  font-weight: normal;
+}
+
+@media all and (max-width: 1230px) {
+  .Jumbotron {
+    height: 275px;
+  }
+
+  .Jumbotron h1 {
+    font-size: 4em;
+  }
+
+  .Jumbotron h2 {
+    font-size: 1.5em;
+  }
+}

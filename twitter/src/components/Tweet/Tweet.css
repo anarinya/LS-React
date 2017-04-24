@@ -1,0 +1,129 @@
+.Tweet {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  font-size: 1.15em;
+  line-height: 1.35em;
+  border-bottom: 1px solid #E1E8ED;
+  color: #14171A;
+}
+
+.Tweet .tweet-info {
+  margin-bottom: 3px;
+}
+
+.Tweet .MiniAvatar img {
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 48px;
+  height: 48px;
+}
+
+.Tweet .tweet-author {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.Tweet .tweet-handle,
+.Tweet .tweet-date,
+.Tweet .tweet-menu,
+.Tweet .tweet-stats {
+  color: #647787;
+}
+
+.Tweet .tweet-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Tweet .tweet-date::before {
+  padding: 0 5px;
+  content: "\00b7";
+}
+
+.Tweet .tweet-menu {
+  float: right;
+  font-weight: lighter;
+}
+
+.Tweet .tweet-menu a {
+  color: inherit;
+}
+
+.Tweet .tweet-stats {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.Tweet .tweet-stats i {
+  padding-right: 10px;
+}
+
+.Tweet .tweet-replies:hover,
+.Tweet .tweet-retweets:hover,
+.Tweet .tweet-likes:hover {
+  cursor: pointer;
+}
+
+.Tweet .tweet-replies:hover, .Tweet .tweet-replies.incremented {
+  color: #059FF5;
+}
+
+.Tweet .tweet-retweets:hover, .Tweet .tweet-retweets.incremented {
+  color: #00C15F;
+}
+.Tweet .tweet-likes:hover, .Tweet .tweet-likes.incremented {
+  color: #E5214A;
+}
+
+.Tweet .count {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.TweetContainer {
+  background-color: #fff;
+  border: 1px solid #E1E8ED;
+  border-radius: 5px;
+  width: 600px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.TweetContainer .tweet-nav {
+  color: #059FF5;
+  padding: 15px;
+  font-weight: lighter;
+  font-size: 1.4em;
+  border-bottom: 1px solid #E1E8ED;
+}
+
+.TweetContainer .tweet-nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.TweetContainer .tweet-nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.TweetContainer .tweet-nav ul li.active {
+  color: #000;
+  font-weight: normal;
+}
+
+.TweetDetailModal {
+  display: block;
+  visibility: hidden;
+  background-color: white;
+  height: 90%;
+  width: 90%;
+  margin: auto;
+}

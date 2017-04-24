@@ -1,0 +1,28 @@
+.Search {
+  display: inline-block;
+  line-height: 48px;
+}
+
+.Search input {
+  outline: none;
+  color: #14171a;
+  width: 200px;
+  padding: 1px 16px 1px 16px;
+  height: 28px;
+  line-height: 16px;
+  font-size: 12px;
+  background-color: #F5F8FA;
+  border: 1px solid #eee;
+  border-radius: 21px;
+  transition: all .2s ease-in-out;
+}
+
+.Search input:focus {
+  background-color: #fff;
+}
+
+@media all and (max-width: 1230px) {
+  .Search input {
+    width: 170px;
+  }
+}
