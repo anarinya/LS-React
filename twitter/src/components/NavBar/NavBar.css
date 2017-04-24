@@ -36,8 +36,8 @@
 .NavBar .Menu li:hover {
   cursor: pointer;
   color: #059FF5;
-  height: 40px;
-  line-height: 41px;
+  height: 41px;
+  line-height: 42px;
   border-bottom: 4px solid #059FF5;
   transform: border 1s ease-in;
 }
